@@ -1,0 +1,48 @@
+<style>
+  h1 {
+    position: relative;
+    padding: 0.25em 0;
+  }
+  h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+  }
+
+  p {
+    position: relative;/*相対位置*/
+    padding-left: 1.5em;/*アイコン分のスペース*/
+    line-height: 1.4;/*行高*/
+    color: black;/*文字色*/
+  }
+
+  p:before {
+    font-family: "Font Awesome 5 Free";/*忘れずに*/
+    content: "\f111";/*アイコンのユニコード*/
+    font-weight: 900;
+    position: absolute;/*絶対位置*/
+    font-size: 1.4em;/*サイズ*/
+    left: 0;/*アイコンの位置*/
+    top: -0.2em;/*アイコンの位置*/
+  }
+  .example1:before {
+    color: #ffa7a1;
+  }
+  .example2:before {
+    color: #ffdfa1;
+  }
+  .example3:before {
+    color: #a1ceff;
+  }
+  .example4:before {
+    color: #b1eab8;
+  }
+  </style>
+
+<h1> Your Payment Successful</h1>
+
+<p>Amount: INR 10.00<br></p>
+<p>UserID: IM_Taro<br></p>
+ <p>UPI Collect has been tokenized.<br></p>
