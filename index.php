@@ -159,7 +159,7 @@ curl_close($curl);
       billingAddressRequired: false,//added on Aug30
       secondaryAmount: true,
       onSubmit: (state,dropin)=>{
-          setTimeout(stopProcessing, 3000);
+          setTimeout(stopProcessing, 7000);
           makePayment(state.data)
               .then(response => {
                   var responseData = response.action;
